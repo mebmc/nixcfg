@@ -1,6 +1,9 @@
 { inputs, ... }@flakeContext:
 let
   homeModule = { config, lib, pkgs, ... }: {
+    imports = [
+      inputs.self.homeModules.shell
+    ];
     config = {
       programs = {
         alacritty = {

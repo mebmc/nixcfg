@@ -17,8 +17,23 @@
         ceres = import ./darwinConfigurations/ceres.nix flakeContext;
         eros = import ./darwinConfigurations/eros.nix flakeContext;
       };
+      darwinModules = {
+        brew = import ./darwinModules/brew.nix flakeContext;
+        default = import ./darwinModules/default.nix flakeContext;
+      };
       homeConfigurations = {
         bmc = import ./homeConfigurations/bmc.nix flakeContext;
+      };
+      homeModules = {
+        default = import ./homeModules/default.nix flakeContext;
+        editor = import ./homeModules/editor.nix flakeContext;
+        shell = import ./homeModules/shell.nix flakeContext;
+      };
+      nixosConfigurations = {
+        tycho = import ./nixosConfigurations/tycho.nix flakeContext;
+      };
+      nixosModules = {
+        default = import ./nixosModules/default.nix flakeContext;
       };
       packages = {
         aarch64-linux = {

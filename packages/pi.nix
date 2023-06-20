@@ -4,6 +4,7 @@ let
     imports = [
       inputs.home-manager.nixosModules.home-manager
       inputs.self.homeConfigurations.bmc.nixosModule
+      inputs.self.nixosModules.default
       {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
