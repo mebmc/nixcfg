@@ -47,6 +47,38 @@ let
           };
           enable = true;
         };
+        lazygit = {
+          enable = true;
+        };
+        man = {
+          enable = true;
+        };
+        neovim = {
+          enable = true;
+        };
+        tmux = {
+          enable = true;
+        };
+        vim = {
+          enable = true;
+        };
+        zellij = {
+          enable = true;
+        };
+        zoxide = {
+          enable = true;
+          enableZshIntegration = true;
+        };
+        zsh = {
+          enable = true;
+          enableCompletion = true;
+          historySubstringSearch = {
+            enable = true;
+          };
+          oh-my-zsh = {
+            enable = true;
+          };
+        };
       };
     };
   };
